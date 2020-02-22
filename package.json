@@ -1,0 +1,19 @@
+{
+  "name": "simple-rest-api",
+  "version": "1.0.0",
+  "description": "This is a simple REST api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": ["simple", "rest", "api"],
+  "author": "Sebastian Torres",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
