@@ -6,12 +6,18 @@
   "scripts": {
     "start": "nodemon src/index.js"
   },
-  "keywords": ["simple", "rest", "api"],
+  "keywords": [
+    "simple",
+    "rest",
+    "api"
+  ],
   "author": "Sebastian Torres",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
