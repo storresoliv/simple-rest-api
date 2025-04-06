@@ -83,15 +83,14 @@ Ejemplo:
 
     Solicitar: POST http://localhost:3000/users
 
-    Con cuerpo (Body) en formato JSON:
+Con cuerpo (Body) en formato JSON:
 
 ```json
 {
   "nombre": "Carlos"
 }
 ```
-
-    Respuesta:
+Respuesta:
 
 ```json
 { "id": 3, "nombre": "Carlos" }
@@ -105,7 +104,7 @@ Ejemplo:
 
     Solicitar: PUT http://localhost:3000/users/1
 
-    Con cuerpo (Body) en formato JSON:
+Con cuerpo (Body) en formato JSON:
 
 ```json
 {
@@ -113,7 +112,7 @@ Ejemplo:
 }
 ```
 
-    Respuesta:
+Respuesta:
 
 ```json
 { "id": 1, "nombre": "Ana actualizada" }
@@ -127,34 +126,36 @@ Ejemplo:
 
     Solicitar: DELETE http://localhost:3000/users/1
 
-    Respuesta: 204 No Content (sin cuerpo de respuesta).
+Respuesta: 204 No Content (sin cuerpo de respuesta).
 
 Probar en el Navegador
 
 Puedes probar los endpoints GET directamente en el navegador:
 
     Abre el navegador y ve a http://localhost:3000/users para obtener todos los usuarios.
-
     Abre el navegador y ve a http://localhost:3000/users/1 para obtener el usuario con ID 1.
 
 Para los demás métodos como POST, PUT y DELETE, puedes usar herramientas como Postman, Insomnia o curl para enviar las solicitudes.
 Usar curl desde la terminal:
 
-    Para obtener todos los usuarios:
-
+Para obtener todos los usuarios:
+```bash
 curl http://localhost:3000/users
-
-    Para crear un nuevo usuario:
-
+```
+Para crear un nuevo usuario:
+```bash
 curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"nombre": "Carlos"}'
+```
 
-    Para actualizar un usuario:
-
+Para actualizar un usuario:
+```bash
 curl -X PUT http://localhost:3000/users/1 -H "Content-Type: application/json" -d '{"nombre": "Ana actualizada"}'
+```
 
-    Para eliminar un usuario:
-
+Para eliminar un usuario:
+```bash
 curl -X DELETE http://localhost:3000/users/1
+```
 
 Detalles adicionales
 Middleware
