@@ -36,8 +36,8 @@ jobs:
       - name: Build Docker image
         run: |
           IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/simple-rest-api:${{ env.VERSION }}-${{ env.COMMIT_HASH }}
-          IMAGE_NAME_LATEST=${{IMAGE_NAME}}:latest
-          IMAGE_NAME_VERSION=${{IMAGE_NAME}}:v${{ env.VERSION }}-${{ env.COMMIT_HASH }}
+          IMAGE_NAME_LATEST=$IMAGE_NAME:latest
+          IMAGE_NAME_VERSION=$IMAGE_NAME:v${{ env.VERSION }}-${{ env.COMMIT_HASH }}
           docker build -t $IMAGE_NAME .
           docker tag $IMAGE_NAME $IMAGE_NAME_LATEST
           docker tag $IMAGE_NAME $IMAGE_NAME_VERSION
